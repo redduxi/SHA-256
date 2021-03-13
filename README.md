@@ -1,5 +1,5 @@
 # SHA256
-SHA256 C++ Implementation
+C++ SHA256 Implementation
 
 [RFC Documentation](https://tools.ietf.org/html/rfc4634#page-11)
 
