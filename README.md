@@ -1,9 +1,7 @@
 # SHA256
 SHA256 C++ Implementation
 
-
-Usage
-
+### Usage
 
 SHA256CryptoServiceProvider s;
 
