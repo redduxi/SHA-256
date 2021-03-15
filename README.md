@@ -6,6 +6,7 @@ C++ SHA256 Implementation
 
 ## Usage
 
+```c++
 SHA256CryptoServiceProvider s;
-
 s.Hashing("a");
+```
