@@ -7,7 +7,7 @@ class SHA256CryptoServiceProvider {
 
 public:
     SHA256CryptoServiceProvider();
-    static void Hashing(const std::string& inputMessage);
+    static std::string Hashing(const std::string& inputMessage);
 private:
     uint8_t  words[64]{};
     uint32_t lengthBlock{};

@@ -30,7 +30,6 @@ void SHA256CryptoServiceProvider::PadInputMessage()
 {
     uint64_t i = lengthBlock;
     uint8_t end = lengthBlock < 56 ? 56 : 64;
-
     words[i++] = 0x80;
     while (i < end)
     {
@@ -183,10 +182,10 @@ std::string SHA256CryptoServiceProvider::FinalProcess()
     return is.str();
 }
 
-void SHA256CryptoServiceProvider::Hashing(const std::string& inputMessage)
+std::string SHA256CryptoServiceProvider::Hashing(const std::string& inputMessage)
 {
     SHA256CryptoServiceProvider sha;
     sha.Update(inputMessage);
-    std::cout << sha.FinalProcess() << std::endl;
+    return sha.FinalProcess();
 }
 
